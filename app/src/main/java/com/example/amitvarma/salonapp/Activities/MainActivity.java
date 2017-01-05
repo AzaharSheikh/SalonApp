@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView txtName;
 
-//test
+//test1
     public static String str_user_name = "", str_user_address = "", str_user_mobile = "", str_user_email = "";
     boolean doubleBackToExitPressedOnce = false;
 
