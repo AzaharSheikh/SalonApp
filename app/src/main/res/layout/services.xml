@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <ImageView
+        android:layout_weight="1"
+        android:id="@+id/iv_pic1"
+        android:layout_width="match_parent"
+        android:background="@mipmap/ic_launcher"
+        android:layout_height="130dp"
+        android:adjustViewBounds="true"
+        />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gold"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Services"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:textSize="18dp"
+        android:id="@+id/txt_view_name_text4" />
+</LinearLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+      >
+        <LinearLayout
+            android:id="@+id/innerLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+           >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/services_type"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/rbt_hair_details"
+            android:layout_weight="1"
+            android:text="Hair"
+            android:gravity="center"
+            android:background="@drawable/rbtn_selector"
+            android:button="@null"
+            android:checked="true"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbt_makeup_details"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:background="@drawable/rbtn_selector"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:text="Makeup"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbt_facial_details"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/rbtn_selector"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:text="Facial"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbt_massage_details"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:background="@drawable/rbtn_selector"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:text="Massage"
+            android:visibility="gone"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbt_spa_details"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/rbtn_selector"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:text="Spa"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </RadioGroup>
+        </LinearLayout>
+    </HorizontalScrollView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/sc_hair"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/li_hair">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/layout_border"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/chk_remember"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:buttonTint="@color/gold"
+                android:button="@drawable/checkbox_selector"
+                android:textColor="@color/gold"
+                />
+
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_view1"
+                android:text="Hair Cut :"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_price1"
+                android:text="500 Rs "
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/li_hair_clr"
+            android:background="@drawable/layout_border"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/chk_hair_clr"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:buttonTint="@color/gold"
+                android:button="@drawable/checkbox_selector"
+                android:textColor="@color/gold"
+                />
+
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_hair_clr"
+                android:text="Hair Colour :"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_price2"
+                android:text="Up to 3500 Rs "
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/li_hair_straight"
+            android:background="@drawable/layout_border"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/chk_hair_straight"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:buttonTint="@color/gold"
+                android:button="@drawable/checkbox_selector"
+                android:textColor="@color/gold"
+                />
+
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_hair_staright"
+                android:text="Hair straightning :"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_price3"
+                android:text="2000 Rs "
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/li_hair_hightlights"
+            android:background="@drawable/layout_border"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/chk_hair_highlights"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:buttonTint="@color/gold"
+                android:button="@drawable/checkbox_selector"
+                android:textColor="@color/gold"
+                />
+
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_hair_heighlihghts"
+                android:text="Hair Heighlights :"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_price4"
+                android:text="1000 Rs "
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/li_hair_Treatment"
+            android:background="@drawable/layout_border"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/chk_hair_Treatment"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:buttonTint="@color/gold"
+                android:button="@drawable/checkbox_selector"
+                android:textColor="@color/gold"
+                />
+
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_hair_Treatment"
+                android:text="Hair Treatment :"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_price5"
+                android:text="- Rs "
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                />
+
+
+        </LinearLayout>
+     </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/sc_makeup"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/li_makeup"
+            android:visibility="gone">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_bridal_makeup"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_bridal_makeup"
+                    android:text="Bridal Mekeup :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+            <TextView
+                android:textColor="@color/gold"
+                android:id="@+id/txt_price01"
+                android:text="Up to 10,000 Rs "
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+
+                />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_wedding_makeup"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_wedding_makeup"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_wedding_makeup"
+                    android:text="Wedding Makeup :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_price02"
+                    android:text="Up to 2000 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_proffesional_makeup"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_proffesional_makeup"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_proffesional_makeup"
+                    android:text="Proffesional Makeup :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_price03"
+                    android:text="Up to 5000 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_Brush_makeup"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_brush_makeup"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_brush_makeup"
+                    android:text="Brush Makeup :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_price06"
+                    android:text="Up to 1000 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/sc_facial"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/li_facial"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_facial1"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial1"
+                    android:text="Normal facials :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial01"
+                    android:text="500 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_facial2"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_facial2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial2"
+                    android:text="Special facials :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial02"
+                    android:text="upto 500 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_facial3"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_facial3"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial3"
+                    android:text="Bio-lift facials :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial03"
+                    android:text="Up to 100 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_facial4"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_facial4"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial4"
+                    android:text="AHA (Alpha Hydroxy Acid) facials :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial04"
+                    android:text="Up to 1000 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_facial5"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_facial5"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial5"
+                    android:text="Paraffin facials :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial05"
+                    android:text="Up to 1000 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_facial6"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_facial6"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial6"
+                    android:text="Gold Facial :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial06"
+                    android:text="Up to 1000 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/sc_spa"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/li_spa"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_spa1"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa1"
+                    android:text="Day Spa :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa1"
+                    android:text="1500 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_spa2"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_spa2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa2"
+                    android:text="Resort Spa :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa8"
+                    android:text="Up to 3000 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_spa3"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_spa3"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa3"
+                    android:text="Destination Spa :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_facial9"
+                    android:text="Up to 3500 Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_spa4"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_spa4"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa4"
+                    android:text="Medical Spa :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa9"
+                    android:text="- Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_spa5"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_spa5"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa5"
+                    android:text="Mineral Springs Spa :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa10"
+                    android:text="- Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:id="@+id/li_spa6"
+                android:background="@drawable/layout_border"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/chk_spa6"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:buttonTint="@color/gold"
+                    android:button="@drawable/checkbox_selector"
+                    android:textColor="@color/gold"
+                    />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa6"
+                    android:text="Cruise Ship Spa :"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:textColor="@color/gold"
+                    android:id="@+id/txt_spa11"
+                    android:text="- Rs :"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
+
