@@ -36,11 +36,6 @@ public class Services extends AppCompatActivity {
         li_facial=(LinearLayout) findViewById(R.id.li_facial);
         li_makeup = (LinearLayout) findViewById(R.id.li_makeup);
 
-
-
-
-
-
         services_type.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
 
         {
