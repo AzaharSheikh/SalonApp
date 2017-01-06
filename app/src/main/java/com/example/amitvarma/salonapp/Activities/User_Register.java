@@ -34,8 +34,16 @@ public class User_Register extends AppCompatActivity {
         db.addRegistration(new User_Data_Model("Ashwini","Mumbai","9766241425","ash@gmail.com","ash"));
         db.addRegistration(new User_Data_Model("azhar","Aroli","123456789","azr@gmail.com","azr"));
 
+//        // Reading all contacts
+//        Log.d("Reading: ", "Reading all contacts..");
+//        List<User_Register> User = db.getUser_RegisterCount();
+//
+//        for (User_Register cn : User) {
+//            String log = "user_name: "+cn.getuser_name()+" ,Name: " + cn.getuser_address() + " ,Phone: " + cn.getmobile_number();
+//            // Writing Contacts to log
+//            Log.d("Name: ", log);
+//        }
     }
-
 }
 
 

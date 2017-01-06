@@ -1,12 +1,16 @@
 package com.example.amitvarma.salonapp.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
+
 import com.example.amitvarma.salonapp.R;
 
 /**
@@ -14,7 +18,7 @@ import com.example.amitvarma.salonapp.R;
  */
 public class Services extends AppCompatActivity {
     LinearLayout li_hair,li_makeup,li_facial,li_spa;
-
+    TextView txt_view_btn_book;
     RadioGroup services_type;
     RadioButton rbt_hair_details, rbt_makeup_details, rbt_facial_details,rbt_massage_details,rbt_spa_details;
 
@@ -35,6 +39,7 @@ public class Services extends AppCompatActivity {
         li_hair = (LinearLayout) findViewById(R.id.li_hair);
         li_facial=(LinearLayout) findViewById(R.id.li_facial);
         li_makeup = (LinearLayout) findViewById(R.id.li_makeup);
+        txt_view_btn_book=(TextView)findViewById(R.id.txt_view_btn_book);
 
         services_type.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
 
@@ -81,6 +86,17 @@ public class Services extends AppCompatActivity {
 
             }
 
+
+        });
+        txt_view_btn_book.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Services.this, Book_Appoinment.class);
+                startActivity(i);
+
+            }
 
         });
     }
