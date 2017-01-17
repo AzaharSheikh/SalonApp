@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+             <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@mipmap/ic_launcher"
+                android:id="@+id/book_detail_img"/>
+        </LinearLayout>
+         
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salon(Branch) :"
+                android:textSize="15dp"
+                android:background="@color/gold"
+                android:padding="5dp"
+                android:id="@+id/txt_salon_branch"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salon Contact Number :"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:id="@+id/txt_salon_contact_no"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:textSize="15dp"
+            android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/txt_date"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="List Of Task :"
+                android:id="@+id/txt_list_task"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:id="@+id/sc_hair"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+        <LinearLayout
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hair Cut :"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="200 Rs."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Facial :"/>
+                <TextView
+                    android:layout_width="0dp"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="500 Rs."/>
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+  </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total"
+                android:id="@+id/txt_total"/>
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/txt_total_rs"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="700 Rs."/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

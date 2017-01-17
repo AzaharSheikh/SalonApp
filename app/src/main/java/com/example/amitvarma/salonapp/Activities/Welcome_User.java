@@ -3,7 +3,9 @@ package com.example.amitvarma.salonapp.Activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -19,7 +21,8 @@ public class Welcome_User extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_user);
-
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
     iv_pic1=(ImageView)findViewById(R.id.iv_pic1);
 
     iv_pic1.setOnClickListener(new View.OnClickListener()
@@ -34,5 +37,9 @@ public class Welcome_User extends AppCompatActivity {
 
     });
     }
+    public boolean onOptionsItemSelected(MenuItem item){
+        finish();
+        return true;
 
+    }
 }

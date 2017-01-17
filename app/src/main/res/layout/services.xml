@@ -14,7 +14,7 @@
             android:layout_height="0dp">
         <ImageView
 
-        android:id="@+id/iv_pic1"
+        android:id="@+id/img_services"
         android:layout_width="match_parent"
             android:layout_weight="8"
         android:background="@mipmap/ic_launcher"
@@ -28,10 +28,10 @@
                 android:gravity="center_vertical"
                 android:textStyle="bold"
                 android:layout_weight="2"
-                android:textColor="@color/gray"
+                android:textColor="@color/gold"
                 android:padding="3dp"
                 android:textSize="18dp"
-                android:id="@+id/txt_view_name_text4" />
+                android:id="@+id/txt_services" />
 
 </LinearLayout>
 
@@ -40,8 +40,6 @@
             android:layout_height="0dp"
             android:orientation="vertical"
             android:layout_weight="6">
-
-
 
         <LinearLayout
             android:id="@+id/innerLay"
@@ -140,7 +138,7 @@
             android:layout_margin="5dp"
             android:layout_height="wrap_content">
 
-            <CheckBox android:id="@+id/chk_remember"
+            <CheckBox android:id="@+id/chk_hair_cut"
 
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -152,7 +150,7 @@
 
             <TextView
                 android:textColor="@color/gold"
-                android:id="@+id/txt_view1"
+                android:id="@+id/txt_haircut"
                 android:text="Hair Cut :"
                 android:layout_width="wrap_content"
                 android:padding="5dp"
@@ -160,7 +158,7 @@
                 android:layout_gravity="center_horizontal" />
             <TextView
                 android:textColor="@color/gold"
-                android:id="@+id/txt_price1"
+                android:id="@+id/txt_haircut_price"
                 android:text="500 Rs "
                 android:layout_width="match_parent"
                 android:padding="5dp"
@@ -201,7 +199,7 @@
                 android:layout_gravity="center_horizontal" />
             <TextView
                 android:textColor="@color/gold"
-                android:id="@+id/txt_price2"
+                android:id="@+id/txt_hair_clr_price"
                 android:text="Up to 3500 Rs "
                 android:layout_width="match_parent"
                 android:padding="5dp"
@@ -234,7 +232,7 @@
 
             <TextView
                 android:textColor="@color/gold"
-                android:id="@+id/txt_hair_staright"
+                android:id="@+id/txt_hair_starightning"
                 android:text="Hair straightning :"
                 android:layout_width="wrap_content"
                 android:padding="5dp"
@@ -243,7 +241,7 @@
 
             <TextView
                 android:textColor="@color/gold"
-                android:id="@+id/txt_price3"
+                android:id="@+id/txt_hair_straightning_price"
                 android:text="2000 Rs "
                 android:layout_width="match_parent"
                 android:padding="5dp"
@@ -284,7 +282,7 @@
 
             <TextView
                 android:textColor="@color/gold"
-                android:id="@+id/txt_price4"
+                android:id="@+id/txt_highlights_price"
                 android:text="1000 Rs "
                 android:layout_width="match_parent"
                 android:padding="5dp"
@@ -324,7 +322,7 @@
 
             <TextView
                 android:textColor="@color/gold"
-                android:id="@+id/txt_price5"
+                android:id="@+id/txt_hair_Treatment_price"
                 android:text="- Rs "
                 android:layout_width="match_parent"
                 android:padding="5dp"
@@ -336,10 +334,7 @@
 
         </LinearLayout>
 
-        </ScrollView>
-
-
-
+        </ScrollView>m
         <ScrollView
             android:layout_width="match_parent"
             android:id="@+id/sc_makeup"
@@ -380,7 +375,7 @@
                     android:layout_gravity="center_horizontal" />
             <TextView
                 android:textColor="@color/gold"
-                android:id="@+id/txt_price01"
+                android:id="@+id/txt_bridal_makeup_price"
                 android:text="Up to 10,000 Rs "
                 android:layout_width="match_parent"
                 android:padding="5dp"
@@ -422,7 +417,7 @@
                     android:layout_gravity="center_horizontal" />
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_price02"
+                    android:id="@+id/txt_wedding_makeup_price"
                     android:text="Up to 2000 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -463,7 +458,7 @@
                     android:layout_gravity="center_horizontal" />
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_price03"
+                    android:id="@+id/txt_proffesional_makeup_price"
                     android:text="Up to 5000 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -503,7 +498,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_price06"
+                    android:id="@+id/txt_brush_makeup_price"
                     android:text="Up to 1000 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -535,7 +530,7 @@
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_facial1"
+                <CheckBox android:id="@+id/chk_Normal_facial"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -547,7 +542,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial1"
+                    android:id="@+id/txt_Normal_facial"
                     android:text="Normal facials :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -555,7 +550,7 @@
                     android:layout_gravity="center_horizontal" />
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial01"
+                    android:id="@+id/txt_Normal_facial_price"
                     android:text="500 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -571,7 +566,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="5dp"
-                android:id="@+id/li_facial2"
+                android:id="@+id/li_Special_facial"
                 android:background="@drawable/layout_border"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
@@ -589,7 +584,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial2"
+                    android:id="@+id/txt_Special_facial"
                     android:text="Special facials :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -598,7 +593,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial02"
+                    android:id="@+id/txt_Special_facial_price"
                     android:text="upto 500 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -613,13 +608,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="5dp"
-                android:id="@+id/li_facial3"
+                android:id="@+id/li_Bio-lift_facial"
                 android:background="@drawable/layout_border"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_facial3"
+                <CheckBox android:id="@+id/chk_Bio-lift_facial"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -631,7 +626,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial3"
+                    android:id="@+id/txt_Bio-lift_facial"
                     android:text="Bio-lift facials :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -639,7 +634,7 @@
                     android:layout_gravity="center_horizontal" />
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial03"
+                    android:id="@+id/txt_Bio-lift_facial_price"
                     android:text="Up to 100 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -653,13 +648,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="5dp"
-                android:id="@+id/li_facial4"
+                android:id="@+id/li_Alpha_facial"
                 android:background="@drawable/layout_border"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_facial4"
+                <CheckBox android:id="@+id/chk_Alpha_facial"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -671,7 +666,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial4"
+                    android:id="@+id/txt_Alpha_facial"
                     android:text="AHA (Alpha Hydroxy Acid) facials :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -680,7 +675,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial04"
+                    android:id="@+id/txt_Alpha_facial_price"
                     android:text="Up to 1000 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -693,13 +688,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="5dp"
-                android:id="@+id/li_facial5"
+                android:id="@+id/li_Paraffin_facial"
                 android:background="@drawable/layout_border"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_facial5"
+                <CheckBox android:id="@+id/chk_Paraffin_facial"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -711,7 +706,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial5"
+                    android:id="@+id/txt_Paraffin_facial"
                     android:text="Paraffin facials :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -720,7 +715,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial05"
+                    android:id="@+id/txt_Paraffin_facial_price"
                     android:text="Up to 1000 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -732,13 +727,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="5dp"
-                android:id="@+id/li_facial6"
+                android:id="@+id/li_Gold_facial"
                 android:background="@drawable/layout_border"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_facial6"
+                <CheckBox android:id="@+id/chk_Gold_facial"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -750,7 +745,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial6"
+                    android:id="@+id/txt_Gold_facial"
                     android:text="Gold Facial :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -759,7 +754,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial06"
+                    android:id="@+id/txt_Gold_facial_price"
                     android:text="Up to 1000 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -792,7 +787,7 @@
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_spa1"
+                <CheckBox android:id="@+id/chk_Day_spa"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -804,7 +799,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa1"
+                    android:id="@+id/txt_Day_spa"
                     android:text="Day Spa :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -813,7 +808,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa2"
+                    android:id="@+id/txt_Day_spa_price"
                     android:text="1500 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -835,7 +830,7 @@
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_spa2"
+                <CheckBox android:id="@+id/chk_Resort_spa"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -847,7 +842,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa01"
+                    android:id="@+id/txt_Resort_spa"
                     android:text="Resort Spa :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -856,7 +851,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa8"
+                    android:id="@+id/txt_Resort_spa_price"
                     android:text="Up to 3000 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -870,7 +865,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="5dp"
-                android:id="@+id/li_spa3"
+                android:id="@+id/li_Destination_spa"
                 android:background="@drawable/layout_border"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
@@ -888,7 +883,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa3"
+                    android:id="@+id/txt_Destination_spa"
                     android:text="Destination Spa :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -897,27 +892,24 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_facial9"
+                    android:id="@+id/txt_Destination_facial"
                     android:text="Up to 3500 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
                     android:layout_height="match_parent"
                     android:gravity="end"
-
                     />
-
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="5dp"
-                android:id="@+id/li_spa4"
+                android:id="@+id/li_Medical_spa"
                 android:background="@drawable/layout_border"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_spa4"
+                <CheckBox android:id="@+id/chk_Medical_spa"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -929,7 +921,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa4"
+                    android:id="@+id/txt_Medical_spa"
                     android:text="Medical Spa :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -937,7 +929,7 @@
                     android:layout_gravity="center_horizontal" />
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa9"
+                    android:id="@+id/txt_Medical_spa_price"
                     android:text="- Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -950,13 +942,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="5dp"
-                android:id="@+id/li_spa5"
+                android:id="@+id/li_Mineral_spa"
                 android:background="@drawable/layout_border"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_spa5"
+                <CheckBox android:id="@+id/chk_Mineral_spa"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -968,7 +960,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa5"
+                    android:id="@+id/txt_Mineral_spa"
                     android:text="Mineral Springs Spa :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -977,7 +969,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa10"
+                    android:id="@+id/txt_Mineral_spa_price"
                     android:text="- Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
@@ -989,13 +981,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="5dp"
-                android:id="@+id/li_spa6"
+                android:id="@+id/li_Cruise_Ship_spa"
                 android:background="@drawable/layout_border"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_spa6"
+                <CheckBox android:id="@+id/chk_Cruise_Ship_spa"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -1007,7 +999,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa6"
+                    android:id="@+id/txt_Cruise_Ship_spa"
                     android:text="Cruise Ship Spa :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -1016,7 +1008,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_spa11"
+                    android:id="@+id/txt_Cruise_Ship_spa_price"
                     android:text="- Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"

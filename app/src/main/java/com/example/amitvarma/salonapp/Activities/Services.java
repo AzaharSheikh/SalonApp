@@ -3,7 +3,9 @@ package com.example.amitvarma.salonapp.Activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -28,6 +30,8 @@ public class Services extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.services);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
         services_type = (RadioGroup) findViewById(R.id.services_type);
         rbt_hair_details = (RadioButton) findViewById(R.id.rbt_hair_details);
         rbt_makeup_details = (RadioButton) findViewById(R.id.rbt_makeup_details);
@@ -99,5 +103,10 @@ public class Services extends AppCompatActivity {
             }
 
         });
+    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        finish();
+        return true;
+
     }
 }

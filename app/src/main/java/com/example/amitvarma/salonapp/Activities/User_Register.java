@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,6 +30,8 @@ public class User_Register extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.user_register);
         DatabaseHandler db = new DatabaseHandler(this);
         db.addRegistration(new User_Data_Model("Ashwini","Mumbai","9766241425","ash@gmail.com","ash"));
@@ -43,6 +46,11 @@ public class User_Register extends AppCompatActivity {
 //            // Writing Contacts to log
 //            Log.d("Name: ", log);
 //        }
+    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        finish();
+        return true;
+
     }
 }
 

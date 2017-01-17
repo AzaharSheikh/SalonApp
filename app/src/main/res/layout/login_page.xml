@@ -23,7 +23,8 @@
             android:src="@mipmap/ic_launcher"
             android:layout_marginBottom="35dp"
             android:layout_gravity="center_horizontal"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:id="@+id/login_logo"/>
         <RadioGroup
             android:layout_width="match_parent"
             android:id="@+id/rg_member"
@@ -48,7 +49,7 @@
 
 
        <EditText
-            android:id="@+id/edt_mobilenumber"
+            android:id="@+id/edt_login_mobilenumber"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:layout_margin="5dp"
@@ -60,7 +61,7 @@
 
 
         <EditText
-            android:id="@+id/edt_password"
+            android:id="@+id/edt_login_password"
             android:layout_width="match_parent"
             android:inputType="textPassword"
             android:padding="10dp"
@@ -125,7 +126,8 @@
                 android:id="@+id/text"
                 android:text="Don't have an Account Yet"
                 android:padding="5dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                />
             <Button
                 android:id="@+id/btn_register"
                 android:text="Register"

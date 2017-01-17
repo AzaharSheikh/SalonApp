@@ -2,6 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+   android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
 
 
     <LinearLayout
@@ -42,32 +49,163 @@
                 android:background="@color/gold"
                 android:padding="5dp"
                 android:id="@+id/txt_view_slelct_chair"
+                android:visibility="gone"
                 />
         </LinearLayout>
         
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
-            
+            android:orientation="horizontal"
+            android:layout_gravity="end">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mark"
+                android:text="Booked"
                 android:textSize="15dp"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/office_chair"
+                android:id="@+id/txt_booked_mark"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Unmark"
                 android:textSize="15dp"
-                android:gravity="end"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/office_chair"
+                android:visibility="gone"
                 />
-            
-            
-            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/office_chair_big"
+                android:id="@+id/img_chair1"
+              />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/office_chair_big"
+                android:id="@+id/img_chair2"
+              />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/office_chair_big"
+                android:id="@+id/img_chair3"
+              />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/office_chair_big"
+                android:id="@+id/img_chair4"
+               />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/office_chair_big"
+                android:id="@+id/img_chair5"
+             />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/office_chair_big"
+                android:id="@+id/img_chair6"
+                />
+
         </LinearLayout>
 
     </LinearLayout>
+    
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time Slots"
+                    android:textSize="20dp"
+                    android:background="@color/gold"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txt_view_btn_timeslots"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="9:00 A.M."
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="9:30 A.M."
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="10:00 A.M."
+                    android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="10:30 A.M."
+                        android:gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="11:00 A.M."
+                        android:gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Book Now"
+            android:textSize="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@color/gold"
+            android:id="@+id/txt_view_book_now"/>
+
+    </LinearLayout>
+</LinearLayout>
 
 </LinearLayout>

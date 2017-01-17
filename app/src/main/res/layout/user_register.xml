@@ -31,7 +31,7 @@
                 android:textColor="@color/gold"
                 android:padding="5dp"
                 android:layout_marginLeft="15dp"
-                android:id="@+id/name_text_view" />
+                android:id="@+id/txt_username" />
 
                 <EditText
                 android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                 android:textColor="@color/gold"
                 android:padding="5dp"
                 android:layout_marginLeft="15dp"
-                android:id="@+id/user_address" />
+                android:id="@+id/txt_user_address" />
 
 
             <EditText
@@ -80,7 +80,7 @@
                 android:textColor="@color/gold"
                 android:padding="5dp"
                 android:layout_marginLeft="15dp"
-                android:id="@+id/mo_text" />
+                android:id="@+id/txt_user_mobile" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -93,7 +93,7 @@
                 android:ems="10"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:id="@+id/edt_mobile" />
+                android:id="@+id/edt_user__mobile" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -103,7 +103,7 @@
                 android:textColor="@color/gold"
                 android:padding="5dp"
                 android:layout_marginLeft="15dp"
-                android:id="@+id/id_text" />
+                android:id="@+id/txt_user_email" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -116,7 +116,7 @@
                 android:ems="10"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:id="@+id/edt_email" />
+                android:id="@+id/edt_user_email" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -127,7 +127,7 @@
                 android:textColor="@color/gold"
                 android:padding="5dp"
                 android:layout_marginLeft="15dp"
-                android:id="@+id/password_text" />
+                android:id="@+id/txt_user_password" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -139,7 +139,7 @@
                 android:maxLength="15"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:id="@+id/edt_password" />
+                android:id="@+id/edt_user_password" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -149,7 +149,7 @@
                 android:textColor="@color/gold"
                 android:padding="5dp"
                 android:layout_marginLeft="15dp"
-                android:id="@+id/confirm_password_text" />
+                android:id="@+id/txt_user_confirm_password" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -161,7 +161,7 @@
                 android:inputType="textPassword"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:id="@+id/edt_comfirm_pass" />
+                android:id="@+id/edt_user_comfirm_pass" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -171,7 +171,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:id="@+id/btn_register_submit"
+                    android:id="@+id/btn_user_register_submit"
                     android:layout_margin="10dp"
                     android:padding="5dp"
                     android:layout_height="35dp"

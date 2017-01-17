@@ -26,7 +26,7 @@
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     android:padding="3dp"
-                    android:id="@+id/txt_view_name_text1" />
+                    android:id="@+id/txt_user_services" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
             </LinearLayout>
             <ImageView
                 android:layout_weight="1"
-                android:id="@+id/iv_pic1"
+                android:id="@+id/img_user_services"
                 android:layout_width="match_parent"
                 android:background="@mipmap/ic_launcher"
                 android:layout_height="130dp"
@@ -73,11 +73,11 @@
             android:textColor="@color/white"
             android:padding="3dp"
             android:textSize="18dp"
-            android:id="@+id/txt_view_name_text4" />
+            android:id="@+id/txt_user_book_appoinment" />
         </LinearLayout>
         <ImageView
             android:layout_weight="1"
-            android:id="@+id/iv_pic2"
+            android:id="@+id/img_user_book_appoinment"
             android:layout_width="match_parent"
             android:background="@mipmap/ic_launcher"
             android:layout_height="130dp"
@@ -98,11 +98,11 @@
                 android:textColor="@color/white"
                 android:padding="3dp"
                 android:textSize="18dp"
-                android:id="@+id/txt_view_name_text5" />
+                android:id="@+id/txt_user_offers" />
         </LinearLayout>
         <ImageView
             android:layout_weight="1"
-            android:id="@+id/iv_pic3"
+            android:id="@+id/img_user_offers"
             android:layout_width="match_parent"
             android:background="@mipmap/ic_launcher"
             android:layout_height="130dp"
@@ -117,12 +117,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quick Enqiry"
+                android:text=" "
                 android:gravity="center_vertical"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:padding="3dp"
                 android:textSize="18dp"
+                android:visibility="gone"
                 android:id="@+id/txt_view_name_text6" />
         </LinearLayout>
     </LinearLayout>

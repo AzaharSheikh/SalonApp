@@ -48,6 +48,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     }
 
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
@@ -69,17 +70,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(KEY_USER_EMAIL, user.getUser_mobile());
         values.put(KEY_USER_PASSWORD, user.getUser_password());
 
-        if(db.insert(TABLE_REGISTER, null, values)>0)
-        {
-            Log.d("databasestatus","true");
-        }else
-        {
-            Log.d("databasestatus","false");
+        if (db.insert(TABLE_REGISTER, null, values) > 0) {
+            Log.d("databasestatus", "true");
+        } else {
+            Log.d("databasestatus", "false");
         }
 
 
         db.close(); // Closing database connection
-    }
 //    // Getting All Contacts
 //    public List<User_Data_Model> getAllregisterlist() {
 //        List<User_Data_Model> registerList = new ArrayList<User_Data_Model>();
@@ -108,4 +106,5 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 //    public List<User_Register> getUser_RegisterCount() {
 //        return user_RegisterCount;
 //    }
+    }
 }
