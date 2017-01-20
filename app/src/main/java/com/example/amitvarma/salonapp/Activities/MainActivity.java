@@ -1,5 +1,7 @@
 package com.example.amitvarma.salonapp.Activities;
 
+//Created byAshwiniBadgujar on 19-01-2017.
+
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.app.Fragment;

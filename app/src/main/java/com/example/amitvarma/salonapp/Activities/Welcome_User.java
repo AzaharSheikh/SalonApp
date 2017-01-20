@@ -13,19 +13,19 @@ import android.widget.ImageView;
 import com.example.amitvarma.salonapp.R;
 
 /**
- * Created by AmitVarma on 21-12-2016.
+ *  Created byAshwiniBadgujar on 19-01-2017.
  */
 public class Welcome_User extends AppCompatActivity {
-    ImageView iv_pic1;
+    ImageView img_user_services;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_user);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-    iv_pic1=(ImageView)findViewById(R.id.iv_pic1);
+        img_user_services=(ImageView)findViewById(R.id.img_user_services);
 
-    iv_pic1.setOnClickListener(new View.OnClickListener()
+        img_user_services.setOnClickListener(new View.OnClickListener()
 
     {
         @Override

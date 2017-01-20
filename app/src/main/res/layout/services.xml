@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_weight="4"
@@ -608,13 +611,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="5dp"
-                android:id="@+id/li_Bio-lift_facial"
+                android:id="@+id/li_Bio_lift_facial"
                 android:background="@drawable/layout_border"
                 android:orientation="horizontal"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content">
 
-                <CheckBox android:id="@+id/chk_Bio-lift_facial"
+                <CheckBox android:id="@+id/chk_Bio_lift_facial"
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -626,7 +629,7 @@
 
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_Bio-lift_facial"
+                    android:id="@+id/txt_Bio_lift_facial"
                     android:text="Bio-lift facials :"
                     android:layout_width="wrap_content"
                     android:padding="5dp"
@@ -634,7 +637,7 @@
                     android:layout_gravity="center_horizontal" />
                 <TextView
                     android:textColor="@color/gold"
-                    android:id="@+id/txt_Bio-lift_facial_price"
+                    android:id="@+id/txt_Bio_lift_facial_price"
                     android:text="Up to 100 Rs :"
                     android:layout_width="match_parent"
                     android:padding="5dp"
